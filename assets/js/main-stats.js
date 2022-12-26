@@ -9,13 +9,13 @@ pokemonList.addEventListener('click', () => {
     pokeApi.getPokemonStats().then(() => {
         const htmlStat = (pokemon) => {
             `<section id="stat" class="content stats">
-                <h1>Tá funcionando</h1>
                     <img src="./assets/images/back-arrow.png" alt="back arrow">
                     <img src="./assets/images/pokeball.png" alt="pokeball image" class="pokeball-image">
     
                     <span class="name">${pokemon.name}</span>
                     <span class="number">${pokemon.number}</span>
                     <span class="type ${type}">${type}</span>
+                    
     
                     <div class="about">
                         <div class="weight">
